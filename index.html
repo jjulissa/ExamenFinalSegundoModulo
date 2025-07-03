@@ -17,21 +17,19 @@
     <button data-priority="baja" class="filtro-btn">Baja</button>
   </div>  
 
-  <form id="taskForm">
-    <input type="text" name="titulo" placeholder="Título de la tarea" required>
-    
-    <select name="prioridad" required>
+  <form id="form-tarea">
+    <input type="text" id="titulo" name="titulo" placeholder="Título de la tarea" required>
+    <select id="prioridad" name="prioridad" required>
       <option value="baja">Baja</option>
       <option value="media">Media</option>
       <option value="alta">Alta</option>
     </select>
-    
     <button type="submit">Agregar tarea</button>
-  </form> 
-
-  <div id="error-msg" style="color: red; margin-bottom: 10px;"></div> 
-
-  <ul id="taskList"></ul>
+  </form>
+  
+  <div id="error-msg" style="color: red; margin-bottom: 10px;"></div>
+  
+  <ul id="lista-tareas"></ul>  
 
   <script src="./main.js"></script>
 
